@@ -1,4 +1,4 @@
-# personal-finance-dashboard
+
 # 💰 Personal Finance Dashboard  
 
 A **modern frontend web app** that helps users track their **income, expenses, and balance** with visual insights.  
