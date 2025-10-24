@@ -2,8 +2,7 @@
 # 💰 Personal Finance Dashboard  
 
 A **modern frontend web app** that helps users track their **income, expenses, and balance** with visual insights.  
-Built using **HTML, CSS, and JavaScript**, this project demonstrates core frontend development skills including **DOM manipulation**, **Chart.js visualization**, and **localStorage persistence**.
-
+Built using **HTML, CSS, and JavaScript**, this project demonstrates core frontend development skills.
 ---
 
 ## 🚀 Features
@@ -31,4 +30,10 @@ Built using **HTML, CSS, and JavaScript**, this project demonstrates core fronte
 ---
 
 ## 📂 Project Structure
+📁 Personal-Finance-Dashboard
+│
+├── index.html # Main HTML page
+├── style.css # Styling and themes
+├── script.js # JavaScript logic
+└── README.md # Project documentation
 
