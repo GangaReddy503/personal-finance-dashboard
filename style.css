@@ -1,0 +1,130 @@
+:root {
+  --bg: #f4f4f9;
+  --text: #222;
+  --card: #ffffff;
+  --accent: #4caf50;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --card: #1e1e1e;
+  --accent: #00bcd4;
+  --shadow: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  background: var(--card);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #388e3c;
+}
+
+input, select {
+  padding: 10px;
+  margin: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: calc(33% - 20px);
+}
+
+.input-section {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.balance-section {
+  background: var(--accent);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow);
+  margin-top: 20px;
+}
+
+.list-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.list-section li {
+  background: var(--card);
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px var(--shadow);
+  transition: transform 0.2s;
+}
+
+.list-section li:hover {
+  transform: translateY(-2px);
+}
+
+.expense {
+  color: #f44336;
+  font-weight: bold;
+}
+.income {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.chart-section {
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .input-section input, .input-section select {
+    width: 100%;
+  }
+}
